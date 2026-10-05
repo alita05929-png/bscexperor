@@ -982,9 +982,10 @@ p {
 .contract__addr {
   flex: 1;
   min-width: 0;
-  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-  font-size: 17px;
+  font-family: var(--font-display);
+  font-size: 28px;
   font-weight: 700;
+  letter-spacing: 0.04em;
   word-break: break-all;
 }
 
