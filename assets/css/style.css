@@ -1,12 +1,12 @@
 :root {
-  --ink: #2b1b8a;
-  --ink-soft: #4b3bb5;
-  --purple: #6d4aff;
-  --purple-light: #c6b0ed;
-  --sky: #7fd0ff;
-  --sky-light: #bbe7ff;
-  --sky-pale: #e8f7ff;
-  --yellow: #ffd23f;
+  --ink: #1e2329;
+  --ink-soft: #5e6673;
+  --purple: #f0b90b;
+  --purple-light: #ffe7a3;
+  --sky: #f6c94a;
+  --sky-light: #ffe9a8;
+  --sky-pale: #fff8e4;
+  --yellow: #f0b90b;
   --orange: #ff9f1c;
   --red: #ff5a5f;
   --pink: #ff8fd1;
@@ -114,8 +114,8 @@ p {
 }
 
 .btn--purple {
-  --btn-bg: var(--purple);
-  --btn-fg: #fff;
+  --btn-bg: var(--ink);
+  --btn-fg: var(--yellow);
 }
 
 .btn--white {
@@ -255,7 +255,7 @@ p {
       rgba(255, 245, 190, 0.95) 0,
       rgba(255, 245, 190, 0) 38%
     ),
-    linear-gradient(180deg, #5db9ff 0%, #9fdcff 55%, var(--sky-light) 100%);
+    linear-gradient(180deg, #f0b90b 0%, #f8d56a 55%, var(--sky-light) 100%);
   overflow: hidden;
 }
 
@@ -301,12 +301,12 @@ p {
   text-transform: uppercase;
   -webkit-text-stroke: 10px var(--ink);
   paint-order: stroke fill;
-  text-shadow: 0 8px 0 var(--ink), 0 18px 30px rgba(43, 27, 138, 0.35);
+  text-shadow: 0 8px 0 var(--ink), 0 18px 30px rgba(30, 35, 41, 0.28);
 }
 
 .hero__title span {
   display: block;
-  color: var(--yellow);
+  color: #fff;
 }
 
 .hero__tagline {
@@ -396,7 +396,7 @@ p {
   background: #fff;
   border: 6px solid var(--ink);
   border-radius: 46% 54% 50% 50% / 52% 48% 52% 48%;
-  box-shadow: 0 14px 0 var(--ink), 0 36px 60px rgba(43, 27, 138, 0.35);
+  box-shadow: 0 14px 0 var(--ink), 0 36px 60px rgba(30, 35, 41, 0.28);
   animation: float 5s ease-in-out infinite;
 }
 
@@ -510,7 +510,7 @@ p {
   z-index: 2;
   width: 26px;
   height: 26px;
-  background: var(--yellow);
+  background: #fff;
   clip-path: polygon(
     50% 0%,
     62% 36%,
@@ -577,17 +577,17 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
-  color: #fff;
+  color: var(--ink);
 }
 
 .ticker__item b {
-  color: var(--yellow);
+  color: var(--ink);
 }
 
 .ticker__item i {
   width: 18px;
   height: 18px;
-  background: var(--yellow);
+  background: var(--ink);
   border: 3px solid var(--ink);
   border-radius: 50%;
 }
@@ -719,7 +719,7 @@ p {
   padding: 0 12px;
   font-size: 80px;
   line-height: 0.9;
-  color: var(--purple);
+  color: var(--ink);
   background: var(--yellow);
   border-radius: 12px;
   content: "\201C";
@@ -727,7 +727,7 @@ p {
 
 /* ---------- Features ---------- */
 .section--features {
-  background: linear-gradient(180deg, var(--sky-pale) 0%, #d9efff 100%);
+  background: linear-gradient(180deg, var(--sky-pale) 0%, #ffe7a3 100%);
   overflow: hidden;
 }
 
@@ -793,7 +793,7 @@ p {
 }
 
 .card:nth-child(4) {
-  --card: #cfc3ff;
+  --card: #ffe7a3;
 }
 
 /* ---------- How to buy ---------- */
@@ -803,16 +803,12 @@ p {
       rgba(255, 255, 255, 0.18) 3px,
       transparent 3.5px
     ),
-    linear-gradient(180deg, #7b5cff 0%, #5a3aea 100%);
+    linear-gradient(180deg, #f0b90b 0%, #e5a800 100%);
   background-size: 34px 34px, 100% 100%;
 }
 
-.section--buy .section__title {
-  color: var(--yellow);
-}
-
 .section--buy .section__sub {
-  color: #fff;
+  color: var(--ink);
 }
 
 .steps {
@@ -901,7 +897,7 @@ p {
 
 /* ---------- Tokenomics ---------- */
 .section--tokenomics {
-  background: linear-gradient(180deg, #d9efff 0%, var(--sky-light) 100%);
+  background: linear-gradient(180deg, #ffe7a3 0%, var(--sky-light) 100%);
 }
 
 .stats {
@@ -982,10 +978,9 @@ p {
 .contract__addr {
   flex: 1;
   min-width: 0;
-  font-family: var(--font-display);
-  font-size: 28px;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: 0.04em;
   word-break: break-all;
 }
 
@@ -1079,8 +1074,8 @@ p {
 .cta {
   position: relative;
   padding: 120px 0 130px;
-  background: radial-gradient(circle at 20% 20%, #8f73ff 0, transparent 40%),
-    linear-gradient(180deg, #6d4aff 0%, #4a2bd0 100%);
+  background: radial-gradient(circle at 20% 20%, #ffe08a 0, transparent 42%),
+    linear-gradient(180deg, #f0b90b 0%, #e5a800 100%);
   overflow: hidden;
 }
 
@@ -1096,7 +1091,7 @@ p {
 .cta h2 {
   font-size: clamp(44px, 6.5vw, 88px);
   text-transform: uppercase;
-  color: var(--yellow);
+  color: #fff;
   -webkit-text-stroke: 9px var(--ink);
   paint-order: stroke fill;
   text-shadow: 0 7px 0 var(--ink);
@@ -1106,7 +1101,7 @@ p {
   max-width: 520px;
   margin-top: 24px;
   font-size: 22px;
-  color: #fff;
+  color: var(--ink);
 }
 
 .cta__buttons {
@@ -1248,7 +1243,7 @@ p {
 .call__title em {
   display: block;
   font-style: normal;
-  color: var(--purple);
+  color: var(--ink);
 }
 
 .call__lead {

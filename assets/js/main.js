@@ -173,7 +173,7 @@
   if (buddy) {
     var bubble = buddy.querySelector(".buddy__bubble");
     var lines = ["万岁!", "皇帝!", "币安皇帝!", "To the throne!", "BNB!", "Long live!"];
-    var colors = ["#ffd23f", "#ff5a5f", "#3ddc97", "#7fd0ff", "#ff8fd1", "#6d4aff"];
+    var colors = ["#f0b90b", "#ff5a5f", "#3ddc97", "#ffe08a", "#ff8fd1", "#1e2329"];
     var talkTimer;
     var burst = function () {
       var r = buddy.getBoundingClientRect();
@@ -224,7 +224,7 @@
 
   var confetti = document.querySelector(".confetti");
   if (confetti && !reduceMotion) {
-    var colors = ["#ffd23f", "#ff5a5f", "#3ddc97", "#7fd0ff", "#ff8fd1", "#ffffff"];
+    var colors = ["#f0b90b", "#ff5a5f", "#3ddc97", "#ffe08a", "#ff8fd1", "#ffffff"];
     for (var c = 0; c < 28; c++) {
       var p = document.createElement("i");
       p.style.cssText =
